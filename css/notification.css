@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+h5 a {
+    text-decoration: none;
+}
+
+.treading_row {
+    margin-top: 25px;
+}
+
+.trending_topics {
+    font-size: 22px;
+    line-height: 25.78px;
+    font-weight: 600;
+}
+
+.trending_topics_headings a {
+    text-decoration: none;
+}
+
+.trending_topics_content {
+    font-size: 16px;
+    line-height: 19px;
+    color: #616161;
+}
+
+.trending_topicsimg {
+    width: 100px;
+    height: 107px;
+}
+
+.userpic {
+    width: 70px;
+    height: 69px;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.name:hover {
+    color: #00AA3A;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*================
+    hashtag page styling start
+===================*/
+.hash{
+    background-color: #0085FF;
+   border-radius: 50%;
+}
+
+/*================
+    hashtag page styling end
+===================*/
+
+
+
+.username {
+    color: rgba(152, 152, 152, 0.9);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.btn button {
+    background: #00AA3A;
+    border: none;
+    border-radius: 18px;
+    padding: 5px 25px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.notification {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.all {
+    padding: 5px 25px;
+    background: #0085FF;
+    border-radius: 61px;
+}
+
+
+.task {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #00AA3A;
+}
+
+.post {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0085FF;
+}
+
+.content {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 8px 0px;
+}
+
+.post_time {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #86929D;
+}
+
+.userimg {
+    width: 52px;
+    height: 56px;
+}
+
+.detail_row {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(87, 87, 87, 0.25);
+    border-radius: 12px;
+}
+
+.tagged {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #00AA3A;
+}
+
+.userpic {
+    width: 56px;
+    height: 56px;
+}
+
+.nav_btn {
+    background: #0085FF;
+    border: 0.8px solid #CBCBCB;
+    box-sizing: border-box;
+    border-radius: 9px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.search {
+    display: none;
+}
+
+.sec-2 {
+    margin-top: 80px;
+}
+
+.navbar-toggler-icon {
+    color: #0085FF;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(87, 87, 87, 0.25);
+}
+
+.nav-tabs .Notification .nav-link.active {
+    background-color: #00AA3A;
+    color: white;
+    border-radius: 61px;
+    border: none;
+}
+
+.nav-tabs .Notification .nav-link {
+    background-color: white;
+    color: black;
+    border: none;
+}
+.delete_acc{
+    width: 50%;
+}
+
+.delete_acc_btn{
+    background-color: #E6E6E6;
+    border-radius: 28px;
+    color: #8A8A8A;
+    font-size: 18px;
+}
+.delete_acc_btn.active{
+    color: white;
+    background-color: #00AA3A;
+}
+.delete_acc_btn:hover{
+    color: white;
+    background-color: #00AA3A;
+}
+.bottom_btn{
+    width: 25%;
+}
+.mobile_back{
+    display: none;
+   
+}
+.report_btn{
+    color: #777777 !important;
+    border: 1px solid #00AA3A !important;
+    border-radius: 72px !important;
+    padding: 5px 20px;
+}
+.report_btn:hover{
+    color: #00AA3A !important;
+    border: 1px solid #00AA3A !important;
+    border-radius: 72px !important;
+    padding: 5px 20px;
+
+}
+
+
+@media screen and (min-device-width: 1020px) and (max-device-width: 1200px) {
+    .trending_topics_content {
+        font-size: 14px;
+        line-height: 16px;
+        color: #616161;
+    }
+    .trending_topicsimg {
+        width: 90px;
+        height: 97px;
+    }
+    .userpic {
+        width: 60px;
+        height: 59px;
+    }
+    .name {
+        color: rgba(0, 0, 0);
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+    .name:hover{
+        font-size: 16px;
+        color: #00AA3A;
+    }
+    .username {
+        color: rgba(152, 152, 152, 0.9);
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .btn button {
+        background: #00AA3A;
+        border: none;
+        border-radius: 18px;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+    }
+    .nav-tabs .Notification .nav-link {
+        background-color: white;
+        color: black;
+        border: none;
+    }
+    .nav-tabs .Notification .nav-link.active {
+        background-color: #00AA3A;
+        color: white;
+        border-radius: 61px;
+        border: none;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1020px) {
+    .trending_topics_content {
+        font-size: 12px;
+        line-height: 16px;
+        color: #616161;
+    }
+    .trending_topicsimg {
+        width: 80px;
+        height: 87px;
+    }
+    .userpic {
+        width: 40px;
+        height: 39px;
+    }
+    .name {
+        color: black;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+    .username {
+        color: rgba(152, 152, 152, 0.9);
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .btn button {
+        background: #00AA3A;
+        border: none;
+        border-radius: 18px;
+        padding: 5px 15px;
+        font-size: 12px;
+        color: white;
+        font-weight: 500;
+    }
+    .nav_icon {
+        width: 20px;
+        height: auto;
+    }
+    .nav_btn {
+        background: #0085FF;
+        border: 0.8px solid #CBCBCB;
+        box-sizing: border-box;
+        border-radius: 9px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .flag {
+        width: 25px;
+        height: auto;
+    }
+}
+
+@media (min-width:768px) and (max-device-width: 991px) {
+    .right_col {
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-device-width: 768px) {
+    .userpic {
+        width: 40px;
+        height: 41px;
+    }
+    .nav_icon {
+        width: 25px;
+        height: auto;
+    }
+    .flag {
+        width: 25px;
+        height: auto;
+    }
+    .nav_btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-device-width: 576px) {
+    .navbar ul {
+        position: relative;
+        display: none;
+    }
+    .content {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 8px 0px;
+    }
+    .tagged {
+        font-size: 12px;
+        color: #00AA3A;
+        font-weight: 500;
+    }
+    .navbar {
+        background-color: rgb(17, 16, 16);
+    }
+    .delete_acc{
+        width: 100%;
+    }
+    .tagged{
+        display: block;
+    }
+    .btn_delete{
+        display: flex;
+        justify-content: center !important;
+        padding: 20px 0px;
+        /* border-bottom: 1px dotted #8A8A8A; */
+    }
+    .edit_profile_data{
+        margin: 20px 0px !important;
+    }
+  
+    .user_details{
+        margin-top: 80px !important;
+    }
+
+    .bottom_btn{
+        width: 75%;
+    }
+    .desktop_back{
+        display: none;
+    }
+    .mobile_back {
+        display: block;
+        width: 30px;   
+    }
+    .mobile_back a{
+        font-size: 40px;
+        color: black !important;
+        font-weight: 300;
+    }
+    .main-heading{
+        display: flex !important;
+        /* justify-content: center !important; */
+        /* position: absolute; */
+        /* left: 40px; */
+        font-size: 25px !important;
+    }
+    .mobile_back a img:hover{
+      font-size: 40px;
+      color: #0085FF;
+      cursor: pointer;
+    }
+    .block_users{
+        display: flex;
+        justify-content: start !important;
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+    }
+    .hashtag{
+        display: none !important;
+    }
+   
+   
+ 
+}

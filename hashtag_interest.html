@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sign_in.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="icon" sizes="16x16" href="images/common/corract_logo.webp">
+    <title>CorrAct | HashTag and Interest</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/common/corract_logo.webp">
+</head>
+
+<body class="info-page-bg">
+
+    <!--================================
+        START MENU AREA
+    =================================-->
+    <!-- start menu-area -->
+    <div class="menu-area sign_pages">
+        <!-- start .top-menu-area -->
+        <div class="top-menu-area">
+            <!-- start .container -->
+            <div class="container">
+                <!-- start .row -->
+                <div class="row">
+                    <!-- start .col-md-3 -->
+                    <div class="col-lg-12 col-md-12 col-12 v_middle">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/common/corract_logo.webp" alt="CorrAct logo" class="img-fluid" width="" height="">
+                                <p class="logo-tag-line">From the horse's mouth</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-3 -->
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end  -->
+    </div>
+    <!-- end /.menu-area -->
+    <!--================================
+        END MENU AREA
+    =================================-->
+
+
+    <section class=" section--padding3">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-7 col-md-10 col-sm-10 col-10 mt-5 d-flex justify-content-center align-items-center">
+
+                    <div class="mt-5 pt-4 ">
+                        <h2 class="text-center">Hashtag & Interests</h2>
+                        <div class="hashtag my-4">
+                            <div class="masonry">
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-3.webp" alt="hashtag" class="p-0">
+                                    <span>#test3</span>
+                                </div>
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-2.webp" alt="hashtag">
+                                    <span>#trys3a</span>
+                                </div>
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-1.webp" alt="hashtag">
+                                    <span>#hand</span>
+                                </div>
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-4.webp" alt="hashtag">
+                                    <span>#aaaa</span>
+                                </div>
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-6.webp" alt="hashtag">
+                                    <span>#called</span>
+                                </div>
+                                <div class="brick hashtag-class p-0">
+                                    <img src="images/hashtag/hashtag-5.webp" alt="hashtag">
+                                    <span>#croping</span>
+                                </div>
+                                
+                            </div>
+                            <span class="hashtag-class">#funfact</span>
+                            <span class="hashtag-class">#asd</span>
+                            <span class="hashtag-class">#eleven</span>
+                            <span class="hashtag-class">#ten</span>
+                            <span class="hashtag-class">#nine</span>
+                            <span class="hashtag-class">#eight</span>
+                            <span class="hashtag-class">#seven</span>
+                            <span class="hashtag-class">#six</span>
+                            <span class="hashtag-class">#five</span>
+                            <span class="hashtag-class">#four</span>
+                            <span class="hashtag-class">#three</span>
+                            <span class="hashtag-class">#act</span>
+                            <span class="hashtag-class">#fact</span>
+                            <span class="hashtag-class">#selfie</span>
+                            <span class="hashtag-class">#water</span>
+                            <span class="hashtag-class">#running</span>
+                            <span class="hashtag-class">#run</span>
+                            <span class="hashtag-class">#music</span>
+                            <span class="hashtag-class">#aaa</span>
+                            <span class="hashtag-class">#aaab</span>
+                        </div>
+
+                        <div class="row my-3 d-flex justify-content-end">
+                                <a href="Information.html" class="btn btn-primary">Done</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Latest compiled JavaScript -->
+    <!--//////////////////// JS GOES HERE ////////////////-->
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- endinject -->
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function() {
+            readURL(this);
+        });
+    </script>
+</body>
+
+</html>

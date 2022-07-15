@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- viewport meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MartPlace - Complete Online Multipurpose Marketplace HTML Template">
+    <meta name="keywords" content="app, app landing, product landing, digital, material, html5">
+
+    <!-- icon script -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>CorrAct | Feed </title>
+
+    <!-- inject:css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="css/helper.css"> -->
+    <!-- <link rel="stylesheet" href="css/feed.css"> -->
+    <!-- <link rel="stylesheet" href="css/notification.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/common/corract_logo.webp"> -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .align-item-center {
+            align-items: center;
+        }
+        
+        .scolor {
+            color: #00AA3A;
+        }
+        /* popover CSS start */
+        
+        .popoverOpener {
+            padding: 5px;
+            border-radius: 3px;
+        }
+        
+        .popoverOpener:hover {
+            background-color: #f3f3f3;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        
+        .popover {
+            position: absolute;
+            top: -55px;
+            left: -8px;
+            padding: 8px 30px;
+            border-radius: 30px;
+            display: none;
+            max-width: 300px;
+        }
+        
+        .bootstrap .popover {
+            transition: left 400ms ease-out, top 250ms ease-in;
+        }
+        
+        .popover-content>div {
+            text-align: center;
+        }
+        
+        .popover-content>div>a:link {
+            border: 1px solid lavender;
+            border-radius: 8px;
+            display: inline-block;
+            padding: 4px;
+            text-decoration: none;
+            transition: all 250ms;
+        }
+        
+        .popover-content>div>a:hover {
+            background-color: #eeeeff;
+            border-color: #AFAFBF;
+            border-radius: 4px;
+            box-shadow: 0 0 4px #ccc;
+        }
+        /* popover CSS end */
+        
+        .action-feed img {
+            margin: 2px 10px;
+        }
+        
+        .action-feed img:hover {
+            animation: zoom-in-zoom-out 2s ease-out;
+        }
+        
+        @keyframes zoom-in-zoom-out {
+            0% {
+                transform: scale(1, 1);
+            }
+            50% {
+                transform: scale(1.5, 1.5);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+        
+        .bounce img {
+            animation: bounce 0.7s ease;
+        }
+        
+        .bounce span:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+        
+        .bounce span:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+        
+        .bounce span:nth-child(4) {
+            animation-delay: 1s;
+        }
+        
+        .bounce span:nth-child(5) {
+            animation-delay: 1.4s;
+        }
+        
+        @keyframes bounce {
+            from,
+            to {
+                transform: translateY(0) scale(1, 1);
+                animation-timing-function: ease-in;
+            }
+            45% {
+                transform: translateY(10px) scale(1, 1);
+                animation-timing-function: linear;
+            }
+            50% {
+                transform: translateY(10px) scale(1.5, 0.5);
+                animation-timing-function: linear;
+            }
+            100% {
+                transform: translateY(10px) scale(1, 1);
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="mr-3" style="margin-top: 90px;">
+        <div class="scolor d-flex align-item-center">
+            <div class="popoverOpener">
+                <span class="pointer ">
+                    <img class="" src="images/feed/like-grey.svg" alt="reaction">
+                    
+                </span>
+            </div>
+            <a href="#" class="text-success" data-toggle="modal" data-target="#like"><b> 156.2K</b></a>
+        </div>
+        <div id="popoverWrapper">
+            <div class="popover top" role="tooltip">
+                <div class="arrow"></div>
+                <div class="action-feed bounce">
+                    <span class="tooltip-toggle" aria-label="Correct" tabindex="0">
+                        <img src="images/feed/like-green.svg" alt="like">
+                    </span>
+                    <span class="tooltip-toggle" aria-label="Not worked" tabindex="0">
+                        <img class="pointer" src="images/feed/thumbs-up.svg"
+                            alt="not worked">
+                    </span>
+                    <span class="tooltip-toggle" aria-label="Fact" tabindex="0">
+                        <img class="pointer" src="images/feed/x-circle.svg"
+                            alt="Fact">
+                    </span>
+                    <span class="tooltip-toggle" aria-label="Fake" tabindex="0">
+                        <img class="pointer" src="images/feed/error.svg"
+                            alt="Fake">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/vendor/jquery/uikit.min.js"></script> -->
+    <!-- <script src="js/vendor/grid.min.js"></script> -->
+    <!-- <script src="js/vendor/jquery-ui.min.js"></script> -->
+    <script src="feed.js"></script>
+    <!-- endinject -->
+
+
+    <script>
+        // popover script
+
+        'use strict';
+        class Popover {
+            constructor(element, trigger, options) {
+                this.options = { // defaults
+                    position: Popover.TOP
+                };
+                this.element = element;
+                this.trigger = trigger;
+                this._isOpen = false;
+                Object.assign(this.options, options);
+                this.events();
+                this.initialPosition();
+            }
+
+            events() {
+                this.trigger.addEventListener('click', this.toggle.bind(this));
+            }
+
+            toggle(e) {
+                e.stopPropagation();
+                if (this._isOpen) {
+                    this.close(e);
+                } else {
+                    this.element.style.display = 'block';
+                    this._isOpen = true;
+                    this.outsideClick();
+                    this.position();
+                }
+            }
+
+            targetIsInsideElement(e) {
+                let target = e.target;
+                if (target) {
+                    do {
+                        if (target === this.element) {
+                            return true;
+                        }
+                    } while (target = target.parentNode);
+                }
+                return false;
+            }
+
+            close(e) {
+                if (!this.targetIsInsideElement(e)) {
+                    this.element.style.display = 'none';
+                    this._isOpen = false;
+                    this.killOutSideClick();
+                }
+            }
+
+
+
+            outsideClick() {
+                document.addEventListener('click', this.close.bind(this));
+            }
+
+            killOutSideClick() {
+                document.removeEventListener('click', this.close.bind(this));
+            }
+
+            isOpen() {
+                return this._isOpen;
+            }
+        }
+
+        Popover.TOP = 'top';
+        Popover.RIGHT = 'right';
+        Popover.BOTTOM = 'bottom';
+        Popover.LEFT = 'left';
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let btn = document.querySelector('.popoverOpener span'),
+                template = document.querySelector('.popover'),
+                pop = new Popover(template, btn, {
+                    position: Popover.Top
+                });
+            let btn1 = document.querySelector('.adadadsa span'),
+                template1 = document.querySelector('.fsdfdfs'),
+                pop1 = new Popover(template1, btn1, {
+                    position: Popover.Top
+                });
+            // links = template.querySelectorAll('.popover-content a');
+            // for (let i = 0, len = links.length; i < len; ++i) {
+            //     let link = links[i];
+            //     console.log(link);
+            //     link.addEventListener('click', function(e) {
+            //         e.preventDefault();
+            //         pop.position(this.className);
+            //         this.blur();
+            //         return true;
+            //     });
+            // }
+        });
+    </script>
+</body>
+
+</html>

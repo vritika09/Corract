@@ -1,0 +1,364 @@
+.profile {
+    position: relative;
+}
+
+.profileuser img {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    overflow: hidden;
+}
+
+.follow {
+    color: #00AA3A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.follow:hover {
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a .unfollow:hover {
+    font-size: 18px;
+    color: #00AA3A;
+}
+
+.user_details {
+    margin-top: 80px;
+}
+.edit_profile_inp{
+    border-radius: 0px;
+    border-bottom: 1px solid #BEBEBE;
+    height: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    line-height: 0.5;
+    text-align: right;
+    padding-right: 0px;
+    float: right;
+}
+.edit_Details_bio{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #BEBEBE;
+    text-align: right;
+}
+.edit_profile {
+    background-image: url("../images/profile/edit_profile.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+.brand_edit_profile {
+    background-image: url("../images/common/brand_edit_profile_banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+
+.profile {
+    background-image: url("../images/common/profile.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+.follow_profile {
+    background-image: url("../images/common/follow_user_banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+.brand_profile{
+    background-image: url("../images/common/brand_edit_profile_banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+.tab2 .item-navigation {
+    text-align: start !important;
+    border-bottom: 0px solid #ececec;
+}
+
+.edit_user_img{
+    position:absolute;
+    bottom: -60px;
+    left: 40px;
+}
+.camera input, .edit_banner input{
+    display: none;
+}
+
+.camera label img{
+    position: absolute;
+    bottom: -50px;
+    left: 150px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.edit_banner label img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.camera label img:hover, .edit_banner label img:hover , .brand_edit label img:hover{
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+
+#imageUpload{
+    position: absolute;
+    left:130px;
+    bottom: -50px;
+    width: 2%;
+    z-index: 0;
+}
+#imageUpload2{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 2%;
+    z-index: 0;
+}
+
+.profile .profileuser, .edit_profile .profileuser, .brand_profile .profileuser {
+    width: 149px;
+    height: 149px;
+    position: absolute;
+    left: 5%;
+    bottom: -25%;
+}
+
+.digits {
+    font-size: 20px;
+    font-weight: 600;
+}
+form{
+    width: 80%;
+}
+form input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    background-image: url('../images/common/search.svg');
+    background-size: 25px 25px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.brand_edit{
+    position: absolute;
+    top: 160px;
+    left: 140px;
+}
+.brand_edit label img{
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+.brand_edit input{
+    position: absolute;
+    width: 2%;
+    left: -15px;
+    top: -20px;
+    z-index: -1;
+}
+.plus{
+    font-size: 30px;
+    color: #00AA3A;
+   
+}
+.add_acc{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #00AA3A;
+}
+
+/****** Responsiveness ************/
+
+@media (max-width: 576px) {
+    .avatar-upload {
+        position: relative;
+        max-width: 130px;
+        margin: 50px 0px 20px 0px !important;
+       
+    }
+    .user_profile{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px !important;
+    }
+    .user_details label,.user_details input{
+        font-size: 16px;
+        margin-top: 0px;
+       
+    }
+    .edit_profile_inp{
+        border-radius: 0px;
+        border-bottom: 1px solid #BEBEBE !important;
+        height: 30px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        line-height: 0.5;
+        text-align: left;
+        padding-right: 0px;
+        float: left;
+        width: 100% !important;
+    }
+    .edit_Details_bio{
+        border-radius: 0px;
+        border-bottom: 1px solid #BEBEBE !important;      
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        text-align: left;
+        padding-right: 0px;
+        float: left;
+        width: 100% !important;
+        margin-top: 0px;
+        padding-top: 0px;
+       
+    }
+    .brand_logo{
+        display: flex;
+        justify-content: center;    
+    }
+    .headings{
+        font-size: 25px !important;
+    }
+
+    .brand_logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .edit button{
+        width: 100% !important;
+    }
+    .profile {
+        height: 11rem;
+    }
+    .profile .profileuser {
+        width: 109px;
+        height: 109px;
+    }
+    .user_details {
+        margin-top: 15%;
+    }
+    .nav-item a {
+        font-size: 12px;
+    }
+    #following img,
+    #followers img {
+        width: 65px;
+        height: 65px;
+    }
+    .user_details p {
+        font-size: 14px;
+    }
+    .digits {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    ul.nav-tabs.nav--tabs2 li a{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+    ul.nav-tabs.nav--tabs2{
+        display: flex !important;   
+    }
+    .pro_subtask li a{
+        font-size: 10px;
+        padding: 0px;
+    }
+    .task-sort-details{
+        display: contents !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #following img,
+    #followers img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.profile_tab ul.nav-tabs li a.active {
+    color: #00AA3A;
+    background: #fff;
+}
+
+ul.nav-tabs li:first-child a {
+    padding-left: 0px !important;
+}
+
+.dropdowns.messaging--dropdown {
+    left: unset !important;
+    width: 290px;
+    border-radius: 10px;
+}
+
+.profile-menu {
+    padding: 20px;
+}
+
+.dropdown-first-icon {
+    margin-right: 10px;
+}
+
+.followtab img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}

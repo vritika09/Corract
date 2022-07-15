@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- icon script -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>CorrAct | Create Task / Post</title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/create_task.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/helper.css" />
+    <link rel="stylesheet" href="css/feed.css">
+    <!----->
+    <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!---->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="images/common/corract_logo.webp">
+
+    <title>CorrAct | Task</title>
+</head>
+
+<body>
+    <!--================================
+        START MENU AREA
+    =================================-->
+    <!-- start menu-area -->
+    <div id="inside-header" class="menu-area inside-header">
+        <!-- start .top-menu-area -->
+        <div class="top-menu-area">
+            <!-- start .container -->
+            <div class="container-fluid">
+                <!-- start .row -->
+                <div class="row">
+                    <!-- start .col-md-3 -->
+                    <div class="col-lg-3 col-md-2 col-4 v_middle">
+                        <div class="logo">
+                            <a href="feed.html">
+                                <img src="images/common/corract_logo.webp" alt="logo image" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-3 -->
+
+                    <!-- start .col-md-5 -->
+                    <div class="col-lg-8 offset-lg-1 col-md-10 col-8 v_middle">
+                        <!-- start .author-area -->
+                        <div class="author-area">
+                            <div class="author__notification_area">
+                                <ul>
+                                    <li class="justify-content-end">
+                                        <form class="searchbox ">
+                                            <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                                            <input type="submit" class="searchbox-submit" value="">
+                                            <img class="header-icon searchbox-icon" src="images/common/search.svg" alt="search icon" class="nav_icon">
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="create_task.html" class="author-area__seller-btn inline">Create</a>
+                                    </li>
+                                    <li class="inline-content">
+                                        <a class="nav-link p-0" href="#">
+                                            <img class="header-icon-flag" src="images/common/location.svg" alt="location">
+                                        </a>
+                                    </li>
+                                    <li class="has_dropdown">
+                                        <div class="icon_wrap">
+                                            <img class="header-icon" src="images/common/notifi-1.webp" alt="notification" class="nav_icon">
+                                            <span class="notification_count purch">2</span>
+                                        </div>
+
+                                        <div class="dropdowns notification--dropdown">
+
+                                            <div class="dropdown_module_header">
+                                                <h4>My Notifications</h4>
+                                                <a href="notification.html">View All</a>
+                                            </div>
+
+                                            <div class="notifications_module">
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Anderson</span> added to Favourite
+                                                                <a href="#">Mccarther Coffee Shop</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-heart loved noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Michael</span> commented on
+                                                                <a href="#">MartPlace Extension Bundle</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-bubble commented noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Khamoka </span>purchased
+                                                                <a href="#"> Visibility Manager Subscriptions</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-cart purchased noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head4.webp" alt="notification">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Anderson</span> added to Favourite
+                                                                <a href="#">Mccarther Coffee Shop</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-star reviewed noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+                                            </div>
+                                            <!-- end /.dropdown -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--start .author__notification_area -->
+
+                            <!--start .author-author__info-->
+                            <div class="author-author__info inline mt-2">
+                                <div class="author__avatar">
+                                    <a href="profile.html">
+                                        <img class="" src="images/usr_avatar.webp" alt="user avatar">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--end /.author-author__info-->
+                        </div>
+                        <!-- end .author-area -->
+                        <!-- author area restructured for mobile -->
+                        <div class="d-flex justify-content-end">
+                            <ul class="mobile-option pt-2">
+                                <li class="mr-2"><a href="create_task.html" class="btn btn-primary-header-mobile"> Create</a></li>
+                                <li class="mr-2"><img class="" src="images/common/search.svg" alt="search icon"></li>
+                            </ul>
+                            <div class="mobile_content ">
+                                <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="menu_icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                <!-- offcanvas menu -->
+                                <div class="offcanvas-menu closed">
+                                    <span class="lnr lnr-cross close_menu">x</span>
+                                    <div class="author-author__info">
+                                        <div class="author__avatar v_middle">
+                                            <img class="user-mobile-avatar " src="images/common/profileuser.webp" alt="user avatar">
+                                        </div>
+                                        <div class="autor__info v_middle">
+                                            <p class="name">
+                                                Aditya Patil
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end /.author-author__info-->
+                                    <div class="dropdowns dropdown--author">
+                                        <ul class="">
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="edit_profile.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/user-edit.svg"
+                                                        alt="Edit User"> Edit
+                                                </span>
+
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="brand_profile.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/switch.svg"
+                                                        alt="Switch Profile"> Switch to Brand Profile
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="block_user.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/profile-delete.svg"
+                                                        alt="Block User"> Blocked Users
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="Notification.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/notification.svg"
+                                                        alt=" Push Notification"> Push Notification
+                                                </span>
+                                                    <div class="toggle-button-cover">
+                                                        <div class="button-cover">
+                                                            <div class="button-toggle r" id="button-3">
+                                                                <input type="checkbox" class="checkbox" />
+                                                                <div class="knobs"></div>
+                                                                <div class="layer"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="delete_account.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/delete.svg"
+                                                        alt=" Delete Account"> Delete Account
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="terms_and_conditions.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/paper.svg"
+                                                        alt="Terms of use"> Terms of use
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="privacy_policy.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/security-safe.svg"
+                                                        alt="Privacy Policy"> Privacy Policy
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="about.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/infosquare.svg"
+                                                        alt="About Corract"> About Corract
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="contact_us.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/calling.svg"
+                                                        alt="Contact us"> Contact Us
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="change_password.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/lock.svg"
+                                                        alt="Change Password"> Change password
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="sign_out.html">
+                                                    <span class="mcolor4">
+                                                    <img class="dropdown-first-icon" src="images/common/logout.svg"
+                                                        alt="Sign out "> Sign out
+                                                </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end /.mobile_content -->
+                    </div>
+                    <!-- end /.col-md-5 -->
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end  -->
+    </div>
+    <!-- end /.menu-area -->
+    <!--================================
+        END MENU AREA
+    =================================-->
+    <div class="container mt-3">
+        <div class="">
+            <div class="task_main_tabs mb-3">
+                <ul class="nav nav-tabs d-flex justify-content-end text-align-center align-items-center">
+                    <li class="nav-item">
+                        <a href="#create_task" class="nav-link active" data-bs-toggle="tab">Create Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#create_post" class="nav-link" data-bs-toggle="tab">Create Post</a>
+                    </li>
+                    <a href="#" class="text-decoration-none ms-5 clear_all d-none d-sm-none d-md-block">Clear all</a>
+                </ul>
+            </div>
+
+            <!--Tab content-->
+            <div class="tab-content">
+                <div class="tab-pane active" id="create_task">
+                    <div class="row">
+                        <div class="col-lg-3 d-none d-sm-none d-md-block">
+                            <div class=" sub_tabs1">
+                                <ul class="nav nav-tabs flex-column border-0">
+                                    <li class="nav-item active pb-5 mt-3">
+                                        <a href="#add_title" class="nav-link active" data-bs-toggle="tab">
+                                            <span>Add Title</span></a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_steps" class="nav-link" data-bs-toggle="tab"><span>Add
+                                                Steps</span></a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_brands" class="nav-link" data-bs-toggle="tab"><span>Add
+                                                Brands</span></a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_users" class="nav-link" data-bs-toggle="tab"><span>Add
+                                                Users</span></a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#preview" class="nav-link" data-bs-toggle="tab"><span>Preview</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#post" class="nav-link" data-bs-toggle="tab"><span>Post</span></a>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 step_count">
+                                    <span class="text-dark font-weight-bold">Step <span
+                                            class="text-success font-weight-bold">1/6</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 ">
+                            <div class="tab-content h-100">
+                                <!--Add title-->
+                                <div class="tab-pane h-100 active fade show slide-up " id="add_title">
+                                    <div class="row h-100 d-flex align-items-center mx-0 overflow-auto">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Title</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="w-100 px-0 title" placeholder="The Conflict between Russia and Ukraine" />
+                                                <button class="bg-white clear text-danger">
+                                                    Clear
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between fix-bottom-bar">
+                                            <div class="previous">
+                                                <a href="" class="simple-link text-muted">Previous</a>
+                                            </div>
+                                            <div class="d-flex justify-content-end  ">
+                                                <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---Add Steps-->
+                                <div class="tab-pane h-100 slide-up " id="add_steps">
+                                    <div class="row h-100 d-flex mx-0 mb-3">
+                                        <div class="col-lg-12 steps">
+                                            <h3 class="py-3">Add Steps</h3>
+
+                                            <div class="post_task_inp d-flex my-3">
+                                                <input type="text" class="w-100 px-0 title" placeholder=" Add tittle" />
+                                                <button class="bg-white text-danger">Clear</button>
+                                            </div>
+                                            <div>
+                                                <input name='range' id='cal' />
+                                            </div>
+
+                                            <div class=" my-3">
+                                                <input class="numberstyle p-0" type="number" min="1" step="1" placeholder="Add no.of days" value="1">
+                                            </div>
+                                            <div class="step-tag">
+                                                <input type="text" class="tag_inp w-100" data-role="tagsinput" placeholder="Assign to Brands and Users" />
+                                            </div>
+
+                                            <div class=" my-4">
+                                                <textarea class="w-100 px-0 title pr-5 discription-textarea" placeholder="Description"></textarea>
+                                                <button class="bg-white text-danger text-area-clear">Clear</button>
+                                            </div>
+
+                                            <div class="document_upload my-2">
+                                                <div class="d-flex">
+                                                    <div class="px-3 py-2 border border-1 me-2 rounded">
+                                                        <input type="file" id="file" accept="image/*" />
+                                                        <label for="file" class="mb-0 doc_label">
+                                                            <i class="material-icons py-0 my-0" id="">file_upload</i>
+                                                            Upload image
+                                                        </label>
+                                                    </div>
+                                                    <div class="px-3 py-2 border border-1  rounded mx-2">
+                                                        <input type="file" id="file" accept="document/*" />
+                                                        <label for="file" class="mb-0 doc_label">
+                                                            <i class="material-icons" id="">file_upload</i>
+                                                            Upload documents
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Attachment -->
+                                                <div class="d-flex align-item-center mt-4">
+
+                                                    <div class="img-preview-div">
+                                                        <img class="img-preview" src="images/feed/feed-1.webp" />
+                                                        <a class="remove-image" href="#">
+                                                            <img src="images/cross.svg" class="image-cross-icon" alt="close" title="close" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="img-preview-div">
+                                                        <img class="img-preview" src="images/feed/feed-1.webp" />
+                                                        <a class="remove-image" href="#">
+                                                            <img src="images/cross.svg" class="image-cross-icon" alt="close" title="close" />
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="my-3 ms-2">
+                                                        <a href="#"><img class="" src="images/common/document-attachment.svg" alt="attachment" /> Attachment 1.doc
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-4 mb-3">
+                                                <span>
+                                                    <h5>Add Steps</h5>
+                                                </span>
+                                                <span><a href="#">
+                                                        <i class="material-icons rounded-circle bg-primary text-white"
+                                                            id="">
+                                                            add</i></a></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-between fix-bottom-bar">
+                                            <div class="previous">
+                                                <a href="" class="simple-link text-muted">Previous</a>
+                                            </div>
+                                            <div class="  ">
+                                                <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!--Add Brands-->
+
+                                <div class="tab-pane h-100 slide-up" id="add_brands">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Brand</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="form-control border-0 tag_inp" data-role="tagsinput" placeholder="Add Brand" />
+                                                <button class="bg-white text-danger">Clear</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-between fix-bottom-bar">
+                                            <div class="previous">
+                                                <a href="" class="simple-link text-muted">Previous</a>
+                                            </div>
+                                            <div class="d-flex justify-content-end  ">
+                                                <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!----Add Users-->
+
+                                <div class="tab-pane h-100 slide-up" id="add_users">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Users</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="form-control border-0 tag_inp" data-role="tagsinput" placeholder="Add users" />
+                                                <button class="bg-white text-danger">Clear</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-between fix-bottom-bar">
+                                            <div class="previous">
+                                                <a href="" class="simple-link text-muted">Previous</a>
+                                            </div>
+                                            <div class="d-flex justify-content-end  ">
+                                                <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---Preview-->
+                                  <div class="tab-pane h-100 slide-up" id="preview">
+                                    <div class="row h-100 d-flex steps mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-2">Preview</h3>
+                                            <div class="post_task_inp">
+                                                <p>The Conflict between Russia and Ukraine</p>
+                                                <h4>Steps</h4>
+                                                <div>
+                                                    <p class="my-3">
+                                                        <span class="more">
+                                                            1. Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                            Register through the Global Passport Seva Online
+                                                            Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+
+                                                    <div class="images d-flex">
+                                                        <div class="img">
+                                                            <img src="images/create_task/1.webp" alt="task_imgage" class="mx-2" />
+                                                        </div>
+
+                                                        <div class="img2 position-relative text-align-center text-white h3">
+                                                            <a href=""><img src="images/create_task/2.webp" alt="task_imgage" class="mx-2" />
+                                                                <div class="centered text-white">+8</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="my-3">
+                                                        <span class="more">
+                                                            2. Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                            Register through the Global Passport Seva Online
+                                                            Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 d-flex justify-content-between fix-bottom-bar">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!----Post-->
+
+                                <div class="tab-pane h-100 slide-up" id="post">
+                                    <div class="row h-100 d-flex steps mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-2">Title</h3>
+                                            <div class="post_task_inp">
+                                                <p>The Conflict between Russia and Ukraine</p>
+                                                <h4>Steps</h4>
+                                                <div>
+                                                    <p class="my-3">
+                                                        <span class="more">
+                                                            1. Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                            Register through the Global Passport Seva Online
+                                                            Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+
+                                                    <div class="images d-flex">
+                                                        <div class="img">
+                                                            <img src="images/create_task/1.webp" alt="task_imgage" class="mx-2" />
+                                                        </div>
+
+                                                        <div class="img2 position-relative text-align-center text-white h3">
+                                                            <a href=""><img src="images/create_task/2.webp" alt="task_imgage" class="mx-2" />
+                                                                <div class="centered text-white">+8</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="my-3">
+                                                        <span class="more">
+                                                            2. Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 d-flex justify-content-between fix-bottom-bar">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------**************** Create Post *********************-->
+                <div class="tab-pane" id="create_post">
+                    <div class="row">
+                        <div class="col-lg-3 d-none d-sm-none d-md-block">
+                            <div class="row sub_tabs1">
+                                <ul class="nav nav-tabs flex-column border-0">
+                                    <li class="nav-item pb-5 mt-3">
+                                        <a href="#add_title_post" class="nav-link show active" data-bs-toggle="tab">Add
+                                            Title</a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_description_post" class="nav-link" data-bs-toggle="tab">Add
+                                            Description</a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_brands_post" class="nav-link" data-bs-toggle="tab">Add Brands</a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_users_post" class="nav-link" data-bs-toggle="tab">Add Users</a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#add_images_post" class="nav-link" data-bs-toggle="tab">Add images</a>
+                                    </li>
+                                    <li class="nav-item pb-5">
+                                        <a href="#preview_post" class="nav-link" data-bs-toggle="tab">Preview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#post_create_post" class="nav-link" data-bs-toggle="tab">Post</a>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 step_count">
+                                    <span class="text-dark font-weight-bold">Step <span
+                                            class="text-success font-weight-bold">1/6</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="tab-content h-100">
+                                <!--Add title-->
+
+                                <div class="tab-pane h-100 active slide-up" id="add_title_post">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Title</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="w-100 px-0 title" placeholder="The Conflict between Russia and Ukraine" />
+                                                <button class="bg-white clear text-danger">
+                                                    Clear
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Add Description-->
+
+                                <div class="tab-pane h-100 slide-up" id="add_description_post">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Description</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="w-100 px-0 title" placeholder="The Conflict between Russia and Ukraine" />
+                                                <button class="bg-white clear text-danger">
+                                                    Clear
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Add Brands-->
+
+                                <div class="tab-pane h-100 slide-up" id="add_brands_post">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Brand</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="form-control border-0 tag_inp" data-role="tagsinput" />
+                                                <button class="bg-white text-danger">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!----Add Users-->
+
+                                <div class="tab-pane h-100 slide-up" id="add_users_post">
+                                    <div class="row h-100 d-flex align-items-center mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-3">Add Users</h3>
+                                            <div class="post_task_inp d-flex">
+                                                <input type="text" class="form-control border-0 tag_inp" data-role="tagsinput" />
+                                                <button class="bg-white text-danger">Clear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!----Add images -->
+
+                                <div class="tab-pane h-100 slide-up" id="add_images_post">
+                                    <div class="row h-100 d-flex mx-0 mt-5">
+                                        <div class="col-lg-12">
+                                            <div class="images_post d-flex">
+                                                <div class="img">
+                                                    <img src="images/create_task/1.webp" alt="image1" class="me-1" width="151" height="161" />
+                                                </div>
+
+                                                <div class="img">
+                                                    <img src="images/create_task/1.webp" alt="image1" class="mx-1" width="151" height="161" />
+                                                </div>
+
+                                                <div class="img">
+                                                    <img src="images/create_task/1.webp" alt="image1" class="mx-1" width="151" height="161" />
+                                                </div>
+
+                                                <div class="img2 position-relative text-align-center h3">
+                                                    <a href=""><img src="images/create_task/1.webp" alt="image1" class="ms-2" width="151" height="161" />
+                                                        <div class="centered text-white">+8</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="document_upload d-flex my-4">
+                                                <div class="px-3 py-2 border border-1 me-2 rounded">
+                                                    <input type="file" id="file" accept="image/*" />
+                                                    <label for="file" class="mb-0">
+                                                        <i class="material-icons py-0 my-0" id="">file_upload</i>
+                                                        Upload image
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!---Preview-->
+
+                                <div class="tab-pane h-100 slide-up" id="preview_post">
+                                    <div class="row h-100 d-flex steps mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-2">Title</h3>
+                                            <div class="post_task_inp">
+                                                <p>The Conflict between Russia and Ukraine</p>
+                                                <h4>Description</h4>
+                                                <div>
+                                                    <p>
+                                                        <span class="more">
+                                                            Register through the Global Passport Seva Online
+                                                            Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+                                                    <div>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded me-2">Ola</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">My
+                                                            Taxi</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Uber</a>
+                                                        <br />
+                                                        <br />
+
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded me-2">akash</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Jhonathan</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Karan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!---Post-->
+
+                                <div class="tab-pane h-100 slide-up" id="post_create_post">
+                                    <div class="row h-100 d-flex steps mx-0">
+                                        <div class="col-lg-12">
+                                            <h3 class="py-2">Title</h3>
+                                            <div class="post_task_inp">
+                                                <p>The Conflict between Russia and Ukraine</p>
+                                                <h4>Description</h4>
+                                                <div>
+                                                    <p>
+                                                        <span class="more">
+                                                            Register through the Global Passport Seva Online
+                                                            Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on
+                                                            )Register through the Global Passport Seva
+                                                            Online Portal (www.embassy.passportindia.gov.in)
+                                                            (Choose your country of residence and click on )
+                                                        </span>
+                                                    </p>
+                                                    <div>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded me-2">Ola</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">My
+                                                            Taxi</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Uber</a>
+                                                        <br />
+                                                        <br />
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded me-2">akash</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Jhonathan</a>
+                                                        <a href="#" class="bg-primary text-white text-decoration-none py-1 px-3 rounded mx-2">Karan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="previous">
+                                            <a href="" class="simple-link text-muted">Previous</a>
+                                        </div>
+                                        <div class="d-flex justify-content-end  ">
+                                            <a href="#add_steps" class=" btn btn-primary" data-bs-toggle="tab">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="inline-content" class="display_hidden">
+        <div class="custom-modal-styles">
+            <div class="">
+                <div class="d-flex justify-content-between mb-3">
+                    <h3 class="model-headng">Select location</h3>
+                    <a href="">Close</a>
+                </div>
+                <hr/>
+                <div class="mb-4">
+                    <div class="inputs">
+                        <input class="input-box px-1 py-0" type="email" id="email" placeholder="Search" />
+                    </div>
+                </div>
+                <div class="country-code">
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img class="" src="images/common/location_icon.svg" alt="location">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg" alt="location">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p>Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="feed.js"></script>
+    <!-- endinject -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+    <script>
+        $(function() {
+            $("input")
+                .on("change", function(event) {
+                    var $element = $(event.target);
+                    var $container = $element.closest(".example");
+
+                    if (!$element.data("tagsinput")) return;
+
+                    var val = $element.val();
+                    if (val === null) val = "null";
+                    var items = $element.tagsinput("items");
+
+                    $("code", $("pre.val", $container)).html(
+                        $.isArray(val) ?
+                        JSON.stringify(val) :
+                        '"' + val.replace('"', '\\"') + '"'
+                    );
+                    $("code", $("pre.items", $container)).html(
+                        JSON.stringify($element.tagsinput("items"))
+                    );
+                })
+                .trigger("change");
+        });
+    </script>
+
+    <!-- read more / less script -->
+    <script>
+        $(document).ready(function() {
+            // Configure/customize these variables.
+            var showChar = 250; // How many characters are shown by default
+            var ellipsestext = "...";
+            var moretext = "more";
+            var lesstext = "less";
+
+
+            $('.more').each(function() {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span><a href="" class="morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function() {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+    </script>
+    <script>
+        var dates = [];
+        $(document).ready(function() {
+            $("#cal").daterangepicker();
+            $("#cal").on('apply.daterangepicker', function(e, picker) {
+                e.preventDefault();
+                const obj = {
+                    "key": dates.length + 1,
+                    "start": picker.startDate.format('MM/DD/YYYY'),
+                    "end": picker.endDate.format('MM/DD/YYYY')
+                }
+                dates.push(obj);
+                showDates();
+            })
+            $(".remove").on('click', function() {
+                removeDate($(this).attr('key'));
+            })
+        })
+
+        function showDates() {
+            $("#ranges").html("");
+            $.each(dates, function() {
+                const el = "<li>" + this.start + "-" + this.end + "<button class='remove' onClick='removeDate(" + this.key + ")'>-</button></li>";
+                $("#ranges").append(el);
+            })
+        }
+
+        function removeDate(i) {
+            dates = dates.filter(function(o) {
+                return o.key !== i;
+            })
+            showDates();
+        }
+    </script>
+
+    <!-- number input -->
+    <script>
+        (function($) {
+
+            $.fn.numberstyle = function(options) {
+
+                /*
+                 * Default settings
+                 */
+                var settings = $.extend({
+                    value: 0,
+                    step: undefined,
+                    min: undefined,
+                    max: undefined
+                }, options);
+
+                /*
+                 * Init every element
+                 */
+                return this.each(function(i) {
+
+                    /*
+                     * Base options
+                     */
+                    var input = $(this);
+
+                    /*
+                     * Add new DOM
+                     */
+                    var container = document.createElement('div'),
+                        btnAdd = document.createElement('div'),
+                        btnRem = document.createElement('div'),
+                        min = (settings.min) ? settings.min : input.attr('min'),
+                        max = (settings.max) ? settings.max : input.attr('max'),
+                        value = (settings.value) ? settings.value : parseFloat(input.val());
+                    container.className = 'numberstyle-qty';
+                    btnAdd.className = (max && value >= max) ? 'qty-btn qty-add disabled' : 'qty-btn qty-add';
+                    btnAdd.innerHTML = '+';
+                    btnRem.className = (min && value <= min) ? 'qty-btn qty-rem disabled' : 'qty-btn qty-rem';
+                    btnRem.innerHTML = '-';
+                    input.wrap(container);
+                    input.closest('.numberstyle-qty').prepend(btnRem).append(btnAdd);
+
+                    /*
+                     * Attach events
+                     */
+                    // use .off() to prevent triggering twice
+                    $(document).off('click', '.qty-btn').on('click', '.qty-btn', function(e) {
+
+                        var input = $(this).siblings('input'),
+                            sibBtn = $(this).siblings('.qty-btn'),
+                            step = (settings.step) ? parseFloat(settings.step) : parseFloat(input.attr('step')),
+                            min = (settings.min) ? settings.min : (input.attr('min')) ? input.attr('min') : undefined,
+                            max = (settings.max) ? settings.max : (input.attr('max')) ? input.attr('max') : undefined,
+                            oldValue = parseFloat(input.val()),
+                            newVal;
+
+                        //Add value
+                        if ($(this).hasClass('qty-add')) {
+
+                            newVal = (oldValue >= max) ? oldValue : oldValue + step,
+                                newVal = (newVal > max) ? max : newVal;
+
+                            if (newVal == max) {
+                                $(this).addClass('disabled');
+                            }
+                            sibBtn.removeClass('disabled');
+
+                            //Remove value
+                        } else {
+
+                            newVal = (oldValue <= min) ? oldValue : oldValue - step,
+                                newVal = (newVal < min) ? min : newVal;
+
+                            if (newVal == min) {
+                                $(this).addClass('disabled');
+                            }
+                            sibBtn.removeClass('disabled');
+
+                        }
+
+                        //Update value
+                        input.val(newVal).trigger('change');
+
+                    });
+
+                    input.on('change', function() {
+
+                        const val = parseFloat(input.val()),
+                            min = (settings.min) ? settings.min : (input.attr('min')) ? input.attr('min') : undefined,
+                            max = (settings.max) ? settings.max : (input.attr('max')) ? input.attr('max') : undefined;
+
+                        if (val > max) {
+                            input.val(max);
+                        }
+
+                        if (val < min) {
+                            input.val(min);
+                        }
+                    });
+
+                });
+            };
+            $('.numberstyle').numberstyle();
+
+        }(jQuery));
+    </script>
+
+    <!--Serach Script-->
+    <script>
+        $(document).ready(function() {
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function() {
+                if (isOpen == false) {
+                    searchBox.addClass('searchbox-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    searchBox.removeClass('searchbox-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });
+            submitIcon.mouseup(function() {
+                return false;
+            });
+            searchBox.mouseup(function() {
+                return false;
+            });
+            $(document).mouseup(function() {
+                if (isOpen == true) {
+                    $('.searchbox-icon').css('display', 'block');
+                    submitIcon.click();
+                }
+            });
+        });
+
+        function buttonUp() {
+            var inputVal = $('.searchbox-input').val();
+            inputVal = $.trim(inputVal).length;
+            if (inputVal !== 0) {
+                $('.searchbox-icon').css('display', 'none');
+            } else {
+                $('.searchbox-input').val('');
+                $('.searchbox-icon').css('display', 'block');
+            }
+        }
+    </script>
+</body>
+
+</html>

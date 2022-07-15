@@ -1,0 +1,387 @@
+.outer_div {
+    height: calc(100vh - 60px);
+}
+
+.user {
+    padding: 50px 70px 0;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.input-box {
+    border-radius: 0px;
+    border-bottom: 1px solid #BEBEBE;
+    height: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    line-height: 0.5;
+}
+
+.input-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.input-box::placeholder {
+    color: #ACACAC;
+    opacity: 1;
+    /* Firefox */
+}
+
+.input-box :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ACACAC;
+}
+
+.input-box ::-ms-input-placeholder {
+    color: #ACACAC;
+}
+
+
+/* checkbox css start */
+
+label>input[type="checkbox"] {
+    display: none;
+}
+
+label>input[type="checkbox"]+*::before {
+    content: "";
+    display: inline-flex;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0085FF;
+    flex-shrink: 0;
+}
+
+label>input[type="checkbox"]:checked+* {
+    color: #0085FF;
+}
+
+label>input[type="checkbox"]:checked+*::before {
+    content: "✓";
+    color: white;
+    text-align: center;
+    background: #0085FF;
+    border-color: #0085FF;
+    font-size: 20px;
+    line-height: 0.7;
+}
+
+
+/* checkbox css end */
+
+
+/* Social login */
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links span img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px;
+    object-fit: contain;
+}
+
+.password-view {
+    right: 0px !important;
+}
+
+
+/* mobile bottom image css */
+
+.bottom_img {
+    display: none;
+}
+
+
+/* Image Box CSS */
+
+.wlcm_box {
+    display: flex;
+    justify-content: center;
+    background-color: #0085FF;
+    border-radius: 16px;
+    position: relative;
+    padding: 40px 30px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.wlcm_main {
+    background: rgba(183, 233, 246, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+}
+
+.wlcm_main img {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.rainbow {
+    width: 60%;
+    height: 75%;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+}
+
+.carosel-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    position: absolute;
+    bottom: 60px;
+    opacity: 0.6;
+}
+
+.carosel-circle.active {
+    width: 48px;
+    height: 16px;
+    background-color: #FFFFFF;
+    position: absolute;
+    opacity: 1;
+}
+
+.carosel-circle.one {
+    left: 60px;
+}
+
+.carosel-circle.two {
+    left: 84px;
+}
+
+.carosel-circle.active.two {
+    left: 84px;
+}
+
+.carosel-circle.three {
+    left: 140px;
+}
+
+.carosel-circle.active.three {
+    left: 110px;
+}
+
+.toggle-password {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: -25px;
+}
+
+.user_detail i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.menu-area.sign_pages {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+}
+
+.menu-area.sign_pages img {
+    max-width: 150px;
+}
+
+.open-sign-in {
+    animation: slideleft 300ms linear forwards;
+}
+
+
+
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        left: 100%
+    }
+    to {
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+.open-text {
+    animation: slideright 300ms linear forwards;
+}
+
+@keyframes slideright {
+    from {
+        opacity: 0;
+        right: 100%
+    }
+    to {
+        opacity: 1;
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .wlcm_box,
+    .remember {
+        display: none;
+    }
+    .user_detail {
+        width: 100%;
+        padding: 0px;
+    }
+    .rainbow {
+        position: absolute;
+        top: 33%;
+    }
+    .user {
+        margin-top: 50px;
+        padding: 20px 30px;
+    }
+    .top-menu-area .logo {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-tag-line {
+        font: 16px;
+        color: #000;
+    }
+}
+
+@media only screen and (max-device-width: 568px) {
+    .main_row {
+        height: 100%;
+    }
+    /* .btn {
+        margin-top: 50px;
+    } */
+    .d-xs-none {
+        display: none;
+    }
+    .outer_div {
+        height: auto;
+        margin-bottom: 70px;
+    }
+    .wlcm a img{
+        width: 50%;
+        height: 50%;
+    }
+   
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width:767px) {
+    .height-main-box {
+        height: auto;
+    }
+    .bottom_img {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .bottom_img img {
+        width: 100%;
+    }
+    .per_detail{
+        text-align: center;
+    }
+
+    .user_profile{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width:991px) {
+    .outer-div {
+        height: calc(100vh - 30px);
+    }
+    .height-main-box {
+        height: auto;
+    }
+    .bottom_img {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    .bottom_img img {
+        width: 100%;
+    }
+}
+
+.input-h-50 {
+    height: 50px !important;
+}
+
+.otp-font-size {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.hashtag-class {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    line-height: 4;
+    background: #E4E4E4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hashtag-class:hover {
+    background: #00AA3A;
+    transition: all 0.3s fade;
+}
+
+.hashtag-class.selected {
+    background: #00AA3A !important;
+    transition: all 0.3s fade;
+    color: #fff !important
+}
+
+.modal-close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.select.country {
+    background-color: transparent !important;
+    min-width: 60px !important;
+    border-bottom: 1px solid #bebebe !important;
+    margin: 0 15px !important;
+    padding-right: 0 !important;
+    line-height: 1;
+    height: 30px !important;
+}

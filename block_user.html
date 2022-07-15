@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/helper.css">
+
+    <link rel="stylesheet" href="css/notification.css">
+    <title>CorrAct | Block User</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/common/corract_logo.webp">
+
+</head>
+
+<body>
+    <!--================================
+        START MENU AREA
+    =================================-->
+    <!-- start menu-area -->
+    <div id="inside-header" class="menu-area inside-header">
+        <!-- start .top-menu-area -->
+        <div class="top-menu-area">
+            <!-- start .container -->
+            <div class="container-fluid">
+                <!-- start .row -->
+                <div class="row">
+                    <!-- start .col-md-3 -->
+                    <div class="col-lg-3 col-md-2 col-4 v_middle">
+                        <div class="logo">
+                            <a href="feed.html">
+                                <img src="images/common/corract_logo.webp" alt="logo image" class="img-fluid" width="" height="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-3 -->
+                    <!-- start .col-md-5 -->
+                    <div class="col-lg-8 offset-lg-1 col-md-10 col-8 v_middle">
+                        <!-- start .author-area -->
+                        <div class="author-area">
+                            <div class="author__notification_area">
+                                <ul>
+                                    <li class="justify-content-end">
+                                        <form class="searchbox ">
+                                            <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                                            <input type="submit" class="searchbox-submit" value="">
+                                            <img class="header-icon searchbox-icon" src="images/common/search.svg" alt="search icon" class="nav_icon" width="" height="">
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="create_task.html" class="author-area__seller-btn inline">Create</a>
+                                    </li>
+                                    <li class="inline-content">
+                                        <a class="nav-link p-0" href="#">
+                                            <img class="header-icon-flag" src="images/common/location.svg" alt="location" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="has_dropdown">
+                                        <div class="icon_wrap">
+                                            <img class="header-icon" src="images/common/notifi-1.webp" alt="notification" class="nav_icon" width="" height="">
+                                            <span class="notification_count purch">2</span>
+                                        </div>
+                                        <div class="dropdowns notification--dropdown">
+                                            <div class="dropdown_module_header">
+                                                <h4>My Notifications</h4>
+                                                <a href="notification.html">View All</a>
+                                            </div>
+                                            <div class="notifications_module">
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification" width="" height="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Anderson</span> added to Favourite
+                                                                <a href="#">Mccarther Coffee Shop</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-heart loved noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification" width="" height="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Michael</span> commented on
+                                                                <a href="#">MartPlace Extension Bundle</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-bubble commented noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head2.webp" alt="notification" width="" height="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Khamoka </span>purchased
+                                                                <a href="#"> Visibility Manager Subscriptions</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-cart purchased noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+
+                                                <div class="notification">
+                                                    <div class="notification__info">
+                                                        <div class="info_avatar">
+                                                            <img src="images/notification_head4.webp" alt="notification" width="" height="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <p>
+                                                                <span>Anderson</span> added to Favourite
+                                                                <a href="#">Mccarther Coffee Shop</a>
+                                                            </p>
+                                                            <p class="time">Just now</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+
+                                                    <div class="notification__icons ">
+                                                        <span class="lnr lnr-star reviewed noti_icon"></span>
+                                                    </div>
+                                                    <!-- end /.notifications -->
+                                                </div>
+                                                <!-- end /.notifications -->
+                                            </div>
+                                            <!-- end /.dropdown -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--start .author__notification_area -->
+
+                            <!--start .author-author__info-->
+                            <div class="author-author__info inline mt-2">
+                                <div class="author__avatar">
+                                    <a href="profile.html">
+                                        <img class="" src="images/usr_avatar.webp" alt="user avatar" width="" height="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--end /.author-author__info-->
+                        </div>
+                        <!-- end .author-area -->
+                        <!-- author area restructured for mobile -->
+                        <div class="d-flex justify-content-end">
+                            <ul class="mobile-option pt-2">
+                                <li class="mr-2"><a href="create_task.html" class="btn btn-primary-header-mobile"> Create</a></li>
+                                <li class="mr-2"><img class="" src="images/common/search.svg" alt="search icon"></li>
+                            </ul>
+                            <div class="mobile_content ">
+                                <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="menu_icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                <!-- offcanvas menu -->
+                                <div class="offcanvas-menu closed">
+                                    <span class="lnr lnr-cross close_menu">x</span>
+                                    <div class="author-author__info">
+                                        <div class="author__avatar v_middle">
+                                            <img class="user-mobile-avatar " src="images/common/profileuser.webp" alt="user avatar" width="" height="">
+                                        </div>
+                                        <div class="autor__info v_middle">
+                                            <p class="name">
+                                                Aditya Patil
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end /.author-author__info-->
+                                    <div class="dropdowns dropdown--author">
+                                        <ul class="">
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="edit_profile.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/user-edit.svg"
+                                                        alt="Edit User" width="" height=""> Edit
+                                                </span>
+
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="brand_profile.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/switch.svg"
+                                                        alt="Switch Profile" width="" height=""> Switch to Brand Profile
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="block_user.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/profile-delete.svg"
+                                                        alt="Block User" width="" height=""> Blocked Users
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="Notification.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/notification.svg"
+                                                        alt=" Push Notification" width="" height=""> Push Notification
+                                                </span>
+                                                    <div class="toggle-button-cover">
+                                                        <div class="button-cover">
+                                                            <div class="button-toggle r" id="button-3">
+                                                                <input type="checkbox" class="checkbox" />
+                                                                <div class="knobs"></div>
+                                                                <div class="layer"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="delete_account.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/delete.svg"
+                                                        alt=" Delete Account" width="" height=""> Delete Account
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="terms_and_conditions.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/paper.svg"
+                                                        alt="Terms of use" width="" height=""> Terms of use
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="privacy_policy.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/security-safe.svg"
+                                                        alt="Privacy Policy"> Privacy Policy
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="about.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/infosquare.svg"
+                                                        alt="About Corract" width="" height=""> About Corract
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="contact_us.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/calling.svg"
+                                                        alt="Contact us" width="" height=""> Contact Us
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="change_password.html">
+                                                    <span>
+                                                    <img class="dropdown-first-icon" src="images/common/lock.svg"
+                                                        alt="Change Password" width="" height=""> Change password
+                                                </span>
+                                                    <img src="images/common/link.svg" alt="link" width="" height="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex justify-content-between align-item-center" href="sign_out.html">
+                                                    <span class="mcolor4">
+                                                    <img class="dropdown-first-icon" src="images/common/logout.svg"
+                                                        alt="Sign out " width="" height=""> Sign out
+                                                </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end /.mobile_content -->
+                    </div>
+                    <!-- end /.col-md-5 -->
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end  -->
+    </div>
+    <!-- end /.menu-area -->
+    <!--================================
+        END MENU AREA
+    =================================-->
+    <section class="section section--padding4">
+        <div class="container-fluid">
+            <div class="row ">
+                <!--*****************
+                Left Col-lg-8
+            *********************-->
+                <div class="col-lg-8 col-md-12 col-12 shortcode_modules">
+                    <div class="d-flex justify-content-between align-item-center block_users ">
+                        <span class="mobile_back"><a href="profile.html" class="d-flex align-item-center"><img src="images/common/back.svg" alt="back" class="" ></a></span>
+                        <h2 class="main-heading ">Blocked Users</h2>
+                        <span class="desktop_back"><a href="profile.html" class="back_icon"><img src="images/common/back.svg" alt="back"></a></span>
+                    </div>
+
+                    <div class="">
+                        <div class="my-0 profile_page px-0 mx-0">
+                            <div class="tab profile_tab">
+                                <!-- end /.item-navigation -->
+                                <div class="tab-content">
+                                    <div class="tab-pane product-tab fade show active" id="product-details1">
+                                        <div class="mb-3 followtab">
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-2.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-3.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-4.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-5.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-6.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-7.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-8.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-9.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3" width="60px" height="60px">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href=""><span class="text-muted simple-link">Unblock</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end /.tab-content -->
+
+                                    <div class="tab-pane product-tab fade" id="product-comment2">
+                                        <h5 class="pt-4">My Followers</h5>
+                                        <hr>
+                                        <div class="mb-3 followtab">
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-2.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-3.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-4.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-5.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-6.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-7.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-8.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-9.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-2 align-items-center">
+                                                <div class="col-lg-9  col-sm-9 col-md-9 col-9 d-flex  justify-content-start align-items-center">
+                                                    <img src="images/profile/following-1.webp" class="" alt="Tushar Kapoor" class="mr-3">
+                                                    <div class="ml-3">
+                                                        <p class="mb-0 text-dark">Tushar Kapoor</p>
+                                                        <span class="text-muted">@Tush</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-3 col-sm-3 col-md-3  justify-content-end text-right">
+                                                    <a href="#"><span class="simple-link">Follow</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end /.product-comment -->
+                                   
+                                    <!-- end /.product-comment -->
+                                </div>
+                                <!-- end /.tab-content -->
+                            </div>
+
+                        </div>
+                        <!--------Tab Content Start-->
+                    </div>
+                </div>
+                <!--************** Right Col-lg-4******************-->
+                <div class="col-xl-4 col-lg-4 col-md-4  d-md-block d-none-sm mt-1">
+                    <aside>
+                        <!---------Treading topics --------->
+                        <div class="d-flex justify-content-between align-item-center mb-3">
+                            <h4 class="">Trending Topics</h4>
+                            <a href="treading_topics.html" class="simple-link mr-4 pr-3"><small> View all</small></a>
+                        </div>
+                        <div class="mb-5">
+                            <div class="row mt-2">
+                                <div class="col-xl-8 col-lg-8 col-md-8  ">
+                                    <h5 class="mb-2"><a href="#"><span>1.</span> National Youth Day</a></h5>
+                                    <p class="trending_topics_content">National Youth Day, also known as Vivekananda Jayanti, is celebrated on 12 January, being the birthday of Swami Vivekananda.
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 pl-0 justify-content-center">
+                                    <img src="images/common/youthday.webp" class="trending_topicsimg" alt="trending-image">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-xl-8 col-lg-8 col-md-8  ">
+                                    <h5 class="mb-2"><a href="#"><span>2.</span> Omicron Virus</a></h5>
+                                    <p class="trending_topics_content">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 pl-0 justify-content-center">
+                                    <img src="images/common/Omicron.webp" class="trending_topicsimg" alt="trending-image">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-xl-8 col-lg-8 col-md-8  ">
+                                    <h5 class="mb-2"><a href="#"><span>3</span> IPL 2022</a></h5>
+                                    <p class="trending_topics_content">IPL Schedule 2022 is not yet officially published by the BCCI i.e. Board of Control for Cricket in India,
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 pl-0 justify-content-center">
+                                    <img src="images/common/ipl.webp" class="trending_topicsimg" alt="trending-image">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-xl-8 col-lg-8 col-md-8  ">
+                                    <h5 class="mb-2"><a href="#"><span>4.</span> Assembly Elction 2022</a></h5>
+                                    <p class="trending_topics_content">National Youth Day, also known as Vivekananda Jayanti, is celebrated on 12 January, being the birthday of Swami Vivekananda.
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 pl-0 justify-content-center">
+                                    <img src="images/common/election.webp" class="trending_topicsimg" alt="trending-image">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-xl-8 col-lg-8 col-md-8  ">
+                                    <h5 class="mb-2"><a href="#"><span>5.</span> Ukraine Conflict</a></h5>
+                                    <p class="trending_topics_content">National Youth Day, also known as Vivekananda Jayanti, is celebrated on 12 January, being the birthday of Swami Vivekananda.
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 pl-0 justify-content-center">
+                                    <img src="images/common/ukraine.webp" class="trending_topicsimg" alt="trending-image">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!---------Who to Follow---------->
+                        <h4 class="mb-3">Who to Follow</h4>
+                        <div>
+                            <div class="row mt-2 align-item-center">
+                                <div class="col-xl-8 col-lg-8 col-md-8 d-flex align-item-center">
+                                    <img src="images/common/userpic.webp" class="userpic mr-3" alt="userpic">
+                                    <div>
+                                        <p class="my-0 name ">Tushar Kapoor</p>
+                                        <p class="my-0 username">@Tush</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <button class="btn btn-primary">Follow</button>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 align-item-center">
+                                <div class="col-xl-8 col-lg-8 col-md-8 d-flex align-item-center">
+                                    <img src="images/common/userpic.webp" class="userpic mr-3" alt="userpic">
+                                    <div>
+                                        <p class="my-0 name ">Tushar Kapoor</p>
+                                        <p class="my-0 username">@Tush</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <button class="btn btn-primary">Follow</button>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 align-item-center">
+                                <div class="col-xl-8 col-lg-8 col-md-8 d-flex align-item-center">
+                                    <img src="images/common/userpic.webp" class="userpic mr-3" alt="userpic">
+                                    <div>
+                                        <p class="my-0 name ">Tushar Kapoor</p>
+                                        <p class="my-0 username">@Tush</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <button class="btn btn-primary">Follow</button>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 align-item-center">
+                                <div class="col-xl-8 col-lg-8 col-md-8 d-flex align-item-center">
+                                    <img src="images/common/userpic.webp" class="userpic mr-3" alt="userpic">
+                                    <div>
+                                        <p class="my-0 name ">Tushar Kapoor</p>
+                                        <p class="my-0 username">@Tush</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <button class="btn btn-primary">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="inline-content" class="display_hidden">
+        <div class="custom-modal-styles">
+            <div class="">
+                <div class="d-flex justify-content-between mb-3">
+                    <h3 class="model-headng">Select location</h3>
+                    <a href="">Close</a>
+                </div>
+                <hr/>
+                <div class="mb-4">
+                    <div class="inputs">
+                        <input class="input-box px-1 py-0" type="email" id="email" placeholder="Search" />
+                    </div>
+                </div>
+                <div class="country-code">
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img class="" src="images/common/location_icon.svg" alt="location">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg" alt="location">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p>Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                    <div class="d-flex justify-content-between coountry-code-list">
+                        <p><img src="images/common/location_icon.svg">Algeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="feed.js"></script>
+    <!-- endinject -->
+
+
+    <script>
+        $(document).ready(function() {
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function() {
+                if (isOpen == false) {
+                    searchBox.addClass('searchbox-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    searchBox.removeClass('searchbox-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });
+            submitIcon.mouseup(function() {
+                return false;
+            });
+            searchBox.mouseup(function() {
+                return false;
+            });
+            $(document).mouseup(function() {
+                if (isOpen == true) {
+                    $('.searchbox-icon').css('display', 'block');
+                    submitIcon.click();
+                }
+            });
+        });
+
+        function buttonUp() {
+            var inputVal = $('.searchbox-input').val();
+            inputVal = $.trim(inputVal).length;
+            if (inputVal !== 0) {
+                $('.searchbox-icon').css('display', 'none');
+            } else {
+                $('.searchbox-input').val('');
+                $('.searchbox-icon').css('display', 'block');
+            }
+        }
+    </script>
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endinject -->
+
+
+    <!-- Header Script -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("inside-header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
